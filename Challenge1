@@ -1,0 +1,91 @@
+package src;
+
+import java.util.*;
+
+public class Challenge1 {
+    public static void main (String[]args) {
+        ArrayList<Integer> elements = new ArrayList<>();
+
+        elements.add(6);
+        elements.add(7);
+        elements.add(13);
+        elements.add(4);
+        elements.add(18);
+        elements.add(34);
+        elements.add(3);
+        elements.add(27);
+        elements.add(15);
+        elements.add(21);
+    }
+
+    private static void Size (String[]args) {
+        ArrayList<Integer> elements = new ArrayList<>();
+
+        System.out.println("ArrayList Size: " + elements.size());
+        System.out.println(elements);
+    }
+
+    private static void Sum (String[]args) {
+        ArrayList<Integer> elements = new ArrayList<>();
+
+        // Sum
+        int sum = 0;
+        for (int i = 0; i < elements.size(); i++) {
+            sum += elements.get(i);
+        }
+        System.out.println("Sum: " + sum);
+        System.out.println();
+    }
+
+    private static void Average (String[]args) {
+        ArrayList<Integer> elements = new ArrayList<>();
+
+        int sum = 0;
+
+        // Average
+        System.out.println("Average: " + sum / elements.size());
+        System.out.println();
+    }
+    private static void EvenNumbers (String[]args) {
+        ArrayList<Integer> elements = new ArrayList<>();
+
+        // Even Numbers
+        System.out.println("Even Numbers: ");
+        for (int i = 0; i < elements.size(); i++) {
+            if (elements.get(i) % 2 == 0) {
+                System.out.print(elements.get(i) + " ");
+            }
+        }
+    }
+
+    private static void OddNumbers (String[]args) {
+        ArrayList<Integer> elements = new ArrayList<>();
+
+        System.out.println();
+        System.out.println("Odd Numbers: ");
+        for (int i = 0; i < elements.size(); i++) {
+            if (elements.get(i) % 2 == 1) {
+                System.out.print(elements.get(i) + " ");
+            }
+        }
+        System.out.println();
+    }
+
+    private static void Maximum (String[]args) {
+        ArrayList<Integer> elements = new ArrayList<>();
+
+        System.out.println("Maximum: " + elements.get(elements.size() - 1));
+    }
+    private static void Minimum (String[]args) {
+        ArrayList<Integer> elements = new ArrayList<>();
+
+        System.out.println("Minimum: " + elements.get(0));
+    }
+
+    private static void Sorted (String[]args) {
+        ArrayList<Integer> elements = new ArrayList<>();
+
+        System.out.println("Sorted Elements - Smallest to Largest:");
+        System.out.println(elements);
+    }
+}
